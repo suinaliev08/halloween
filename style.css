@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Frightmare;
+    src: url('Frightmare.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background: radial-gradient(#9d5900, #3d2200);
+}
+.clock {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.clock span {
+    font-size: 7em;
+    letter-spacing: 10px;
+    font-family: Frightmare;
+    color: #030303;
+}
+.clock div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+.clock p {
+    font-weight: bold;
+}
+
+@media (max-width:500px){
+      img{
+            width:  22em;
+      }
+      .clock{
+            font-size:0.5em;
+      }
+}
